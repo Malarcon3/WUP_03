@@ -1,6 +1,6 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Marcia Alarcon"
+author: "Marcia D Alarcon"
 date: "14 September 2021"
 output: html_document
 ---
