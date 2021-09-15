@@ -57,7 +57,8 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-The p-value is smaller than 
+The p-value is smaller than.
+
 
 ## Conclusions
 
