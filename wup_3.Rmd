@@ -32,7 +32,7 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-The box plots shows that people in the back tend to consume more alcohol and there doesn't appear to be a difference bewteen the ones who sit in the middle and front.
+The box plots shows that people in the back tend to consume more alcohol and there doesn't appear to be a difference between the ones who sit in the middle and front.
   
 ### get fancy  
 
@@ -48,7 +48,7 @@ This fancy boxplotplot shows the same information as the last boxplot however th
 favstats(alcohol~Seat,data=davisdata)
 ```
 
-The poepl who dit in the back have the 
+Based on this numerical summary the ones who sit in the back consume on average 9.6 drinks, the ones in the front drink 1.8 on average, and the middle a average of 3.2 drinks.
 
 ## Inferential Tests
 
@@ -57,7 +57,14 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-The p-value is smaller than.
+```{r}
+plot(TukeyHSD(model1))
+```
+
+
+First we got a p-value of 0.000116 is smaller than 0.05 so we conclude we reject $H_0$; there is a difference in alcohol consumption based on where on sits.
+
+Then the Tukey test shows a different between the ones who sit in the middle and front.
 
 
 ## Conclusions
