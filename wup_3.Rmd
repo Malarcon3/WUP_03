@@ -61,11 +61,7 @@ summary.aov(model1)
 plot(TukeyHSD(model1))
 ```
 
-
-First we got a p-value of 0.000116 is smaller than 0.05 so we conclude we reject $H_0$; there is a difference in alcohol consumption based on where on sits.
-
-Then the Tukey test shows a different between the ones who sit in the middle and front.
-
+We have a p value of 0.000116 so we conclude that we reject the null hypothesis. There is a difference with where you sit and the alcohol that is consumed. The Tukey test shows that the confidence interval contains 0 for middle front. Meaning we have no evidence of the of any difference in alcohol consumption between the students that sit in the middle and the students that sit in the front. 
 
 ## Conclusions
 
