@@ -40,7 +40,7 @@ The box plots shows that people in the back tend to consume more alcohol and the
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-This fancy boxplotplot shows the same information as the last boxplot however the outliers were just added.
+This fancy boxplotplot shows the same information as the last boxplot however the outliers were just added.The outliers could possibly be the students who were moved by the instructor or it could be any other reason whihc is not given.
 
 ## Numerical Summarys 
 
@@ -48,7 +48,7 @@ This fancy boxplotplot shows the same information as the last boxplot however th
 favstats(alcohol~Seat,data=davisdata)
 ```
 
-Based on this numerical summary the ones who sit in the back consume on average 9.6 drinks, the ones in the front drink 1.8 on average, and the middle a average of 3.2 drinks.
+Based on this numerical summary the ones who sit in the back consume on average 9.6 drinks, the ones in the front drink 1.8 on average, and the middle students an average of 3.2 drinks. 
 
 ## Inferential Tests
 
@@ -61,8 +61,8 @@ summary.aov(model1)
 plot(TukeyHSD(model1))
 ```
 
-We have a p value of 0.000116 so we conclude that we reject the null hypothesis. There is a difference with where you sit and the alcohol that is consumed. The Tukey test shows that the confidence interval contains 0 for middle front. Meaning we have no evidence of the of any difference in alcohol consumption between the students that sit in the middle and the students that sit in the front. 
+We have a p value of 0.000116 so we conclude that we reject the null hypothesis. There is a difference with where you sit and the alcohol that is consumed. The Tukey test shows that the confidence interval contains 0 for middle front. Meaning we have no evidence of the of any difference in alcohol consumption between the students that sit in the middle and the students that sit in the front. There is a difference between the confidence level does not pass through 0. 
 
 ## Conclusions
 
-
+People that sit in the back drink more then those who sit in the middle or front of the class. we reject the null hypothesis because there is a difference in the amount of alcohol consumption with the students that sit in the back row.
